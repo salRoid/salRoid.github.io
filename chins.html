@@ -30,14 +30,14 @@
 
 			<section class="left-section full-height">
 
-				<a class="logo" href="#"><img src="images/f.png" alt="Logo"></a>
+				<a class="logo" href="http://salroid.me/chins.html"><img src="images/f.png" alt="Logo"></a>
 
 				<div class="display-table">
 					<div class="display-table-cell">
 						<div class="main-content">
 							<h1 class="title"><b>Chinmaya's Birthday</b></h1>
 							<p>Hello Everyone, As you know My Birthday is on Oct - 26.
-								Let's make it a awesome event this year.</p>
+								Let's make it an awesome event this year, like always.</p>
 
 								<br>
 
@@ -63,7 +63,7 @@
 					<div class="display-table-cell">
 
 						<div id="rounded-countdown">
-							<div  class="countdown" data-remaining-sec=""></div>
+							<div id="heroics" class="countdown" data-remaining-sec=""></div>
 						</div>
 
 					</div><!-- display-table-cell -->
@@ -75,6 +75,20 @@
 	</div><!-- main-area -->
 
 	<!-- SCIPTS -->
+
+	<script>
+
+		var startDate = new Date();
+		var endDate   = new Date("10/26/2020");
+		var seconds = (endDate.getTime() - startDate.getTime()) / 1000;
+		document.getElementsByClassName('countdown')[0].setAttribute('data-remaining-sec', seconds);
+
+		function MyFunction(socialmedia) {
+			alert("Ahh Boring; I don't use " + socialmedia);
+		}
+
+	</script>
+
 
 	<script src="common-js/jquery-3.1.1.min.js"></script>
 
@@ -89,20 +103,6 @@
 	<script src="common-js/jquery.throttle.js"></script>
 
 	<script src="common-js/scripts.js"></script>
-
-	<script>
-
-		var startDate = new Date();
-		var endDate   = new Date("10/26/2020");
-		var seconds = (endDate.getTime() - startDate.getTime()) / 1000;
-		document.getElementsByClassName('countdown')[0].setAttribute('data-remaining-sec', 2000);
-
-		function MyFunction(socialmedia) {
-			alert("Ahh Boring; I don't use " + socialmedia);
-		}
-
-	</script>
-
 
 </body>
 </html>
