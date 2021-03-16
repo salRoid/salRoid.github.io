@@ -63,12 +63,12 @@ header {
 }
 
 p {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 p {
     height: 35vh;
-    min-height: 10vh;
+    min-height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
