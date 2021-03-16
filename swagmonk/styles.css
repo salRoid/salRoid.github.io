@@ -28,7 +28,7 @@ p {
 
 p {
     height: 50vh;
-    min-height: 20vh;
+    min-height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
