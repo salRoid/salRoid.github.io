@@ -1,36 +1,53 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background: radial-gradient(#ece38a,#dda17e);
+    background: radial-gradient(#ece38a, #dda17e);
     color: white;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
 }
 
+header {
+    font-size: 1rem;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .monk {
+    height: 512px;
+    width: 512px;
     position: relative;
 }
 
 .monkbody {
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .eyecontainer {
-    top: 0;
+    padding-top: 100px;
+    top: 110px;
     position: absolute;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    z-index: 9;
 }
 
 .box {
+    margin-top: 95px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,51 +55,34 @@ body {
 
 .box .eye {
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     display: block;
     background: white;
-    margin: 0 5px;
+    margin: 0 3px;
     border-radius: 50%;
-    box-shadow: 0 5px 45px rgba(0,0,0,0.2),
-                            inset 0 0 15px #dadada,
-                            inset 0 0 25px #dadada;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2), inset 0 0 15px #dadada, inset 0 0 25px #dadada;
 }
 
 .box .eye::before {
     content: '';
     position: absolute;
     top: 50%;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     left: 15px;
-    transform: translate(-50%, -50%) ;
-    background: #000;
+    transform: translate(-50%, -50%);
+    background: rgb(51, 50, 50);
     border-radius: 50%;
-    border: 5px solid #2196f3;
+    border: 5px solid #7CA2D1;
     box-sizing: border-box;
-}
-
-header {
-    font-size: 1rem; 
-}
-
-header {
-    min-height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 h2 {
     font-size: 2rem;
-}
-
-h2 {
     height: 25vh;
     min-height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
