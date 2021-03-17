@@ -5,13 +5,25 @@
 }
 
 body {
-    background: radial-gradient(#ffffff,#ffffff);
+    background: radial-gradient(#ece38a,#dda17e);
     color: black;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
 }
 
+.monk {
+    position: relative;
+}
+
+.monkbody {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .eyecontainer {
+    top: 0;
+    position: absolute;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
@@ -26,11 +38,11 @@ body {
 
 .box .eye {
     position: relative;
-    width: 120px;
-    height: 120px;
+    width: 40px;
+    height: 40px;
     display: block;
     background: white;
-    margin: 0 20px;
+    margin: 0 5px;
     border-radius: 50%;
     box-shadow: 0 5px 45px rgba(0,0,0,0.2),
                             inset 0 0 15px #dadada,
@@ -41,13 +53,13 @@ body {
     content: '';
     position: absolute;
     top: 50%;
-    width: 45px;
-    height: 45px;
-    left: 35px;
+    width: 20px;
+    height: 20px;
+    left: 15px;
     transform: translate(-50%, -50%) ;
     background: #000;
     border-radius: 50%;
-    border: 10px solid #2196f3;
+    border: 5px solid #2196f3;
     box-sizing: border-box;
 }
 
@@ -73,3 +85,4 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+
