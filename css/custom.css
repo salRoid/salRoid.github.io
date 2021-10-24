@@ -235,7 +235,8 @@ a {
   color: #40BFED;
 }
 
-.skills, .date_container {
+.skills,
+.date_container {
   margin-left: 48px;
 }
 
@@ -283,13 +284,13 @@ a {
   justify-content: center;
 }
 
-.project_title{
+.project_title {
   text-align: center;
   color: #000000;
   font-size: 1rem;
 }
 
-.project_desc{
+.project_desc {
   text-align: center;
   color: #000000;
   font-size: 0.8rem;
@@ -306,7 +307,6 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
-
 
 .card_experience {
   display: flex;
@@ -343,6 +343,7 @@ a {
   display: flex;
   flex-direction: column;
 }
+
 .exp_content_header {
   display: flex;
   flex-direction: row;
@@ -361,10 +362,8 @@ a {
   flex-direction: column;
 }
 
-
-.exp_content_container .location {
-  margin-left: 0px;
-  margin-top: 8px;
+.location_container .location {
+  padding: 8px;
   font-size: 12px;
   color: #00acee;
 }
@@ -379,4 +378,57 @@ a {
 .job_company {
   font-size: .8rem;
   color: #7381ff;
+}
+
+.detail_container {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+.detail_icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 8px;
+  justify-content: center;
+}
+
+.small_logo {
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid rgb(202, 201, 201);
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon_divider {
+  display: flex;
+  width: 16px;
+  color: #fff;
+  height: .5px;
+  margin: 2px;
+  border: .5px solid rgb(202, 201, 201);
+}
+
+.detail_desc {
+  display: flex;
+  justify-content: center;
+}
+
+.desigs {
+  margin: 0;
+  padding: 0;
+  list-style-type: disc;
+}
+
+.desig_item {
+  font-size: 12px;
+  list-style-type: disc;
+}
+
+.location_container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.1);
 }
