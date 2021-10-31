@@ -12,6 +12,7 @@ body {
   position: absolute;
   display: block;
   z-index: 1;
+  background: linear-gradient(rgb(0, 0, 7), rgb(1, 1, 39));
 }
 
 .android {
