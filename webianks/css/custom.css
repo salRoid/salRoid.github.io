@@ -18,6 +18,8 @@ body {
 .android {
   width: 8rem;
   height: 8rem;
+  position: fixed;
+  margin-top: -4rem;
 }
 
 .content {
@@ -46,6 +48,7 @@ body {
 }
 
 .display_profile {
+  z-index: 3;
   display: flex;
   height: 12rem;
   width: 12rem;
@@ -66,6 +69,7 @@ body {
 }
 
 .title {
+  z-index: 4;
   margin-top: 1rem;
   font-size: 2.5rem;
   padding: 0%;
