@@ -103,5 +103,6 @@ body {
   .card_profile {
     box-shadow: none;
     border: none;
+    width: 100%;
   }
 }
