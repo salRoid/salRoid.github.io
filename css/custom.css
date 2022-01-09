@@ -473,3 +473,9 @@ a {
 .card_profile.loading {
   height: 148px;
 }
+
+.company_logo.loading {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 8px ;
+}
