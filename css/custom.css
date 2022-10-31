@@ -29,7 +29,7 @@ body {
   height: 148px;
   margin: 0.4rem 0rem 0.2rem 0rem;
   overflow: hidden;
-  background-image: url(../android/banner_webianks.jpg);
+  background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_webianks.jpg);
   background-position: bottom center;
   background-size: cover;
   position: relative;
@@ -335,7 +335,7 @@ a {
   height: 5rem;
   background-position: center;
   background-size: cover;
-  background-image: url(../android/banner_webianks.jpg);
+  background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_webianks.jpg);
 }
 
 .exp_content_container {
