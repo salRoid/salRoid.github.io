@@ -74,7 +74,6 @@ body {
 }
   
 .overview_content {
-    margin-left: 16px;
     display: flex;
     flex-direction: column;
 }
@@ -196,11 +195,6 @@ body {
     height: 24px;
   }
   
-  .overview_content {
-    margin-left: 16px;
-    display: flex;
-    flex-direction: column;
-  }
     
   .collection a.collection-item {
     color: inherit;
