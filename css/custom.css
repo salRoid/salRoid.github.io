@@ -479,3 +479,15 @@ a {
   height: 3rem;
   border-radius: 8px ;
 }
+
+@media screen and (max-width: 420px) {
+
+  .date_container {
+    margin-left: 24px;
+  }
+
+  .card_header_title {
+    margin-left: 0;
+  }
+
+}

@@ -70,7 +70,7 @@ body {
     flex-grow: 1;
     flex-direction: row;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px;
 }
   
 .overview_content {
@@ -593,4 +593,16 @@ body {
   
   a {
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 420px) {
+
+    .date_container {
+      margin-left: 24px;
+    }
+
+    .card_header_title {
+      margin-left: 0;
+    }
+
   }
