@@ -189,6 +189,11 @@ body {
   background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_experience.jpg);
 }
 
+.resume {
+  background-position: center top;
+  background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_resume.jpg);
+}
+
 .card_profile {
   padding: 0px;
   display: flex;

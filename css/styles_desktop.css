@@ -35,6 +35,10 @@ body {
     box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
 }
 
+.border_radius_all {
+  border-radius: 8px;
+}
+
 .card_panel_outer {
   padding: 0;
   border-radius: 8px;
@@ -659,8 +663,6 @@ body {
 
   }
 
-
-
   .skill_container {
     display: flex;
     flex-direction: row;
@@ -874,4 +876,10 @@ body {
       -webkit-transform: rotate(108deg);
       transform: rotate(108deg);
   }
+}
+
+
+.resume {
+  background-position: center top;
+  background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_resume.jpg);
 }
