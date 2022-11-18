@@ -11,6 +11,7 @@ body {
     margin: 0.8rem;
     font-size: 16px;
     color: #999999;
+    background-image: url(../original/test1.jpg);
 }
   
 .title {
