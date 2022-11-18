@@ -104,35 +104,35 @@ body {
 }
 
 .birthday {
-    background-image: url(../img/birthday.jpg);
+    background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_birthday.jpg);
 }
   
 .mail {
-    background-image: url(../img/mail.jpg);
+    background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_mail.jpg);
 }
 
 .personal {
   background-position: bottom center;
-  background-image: url(../img/personal.jpg);
+  background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_personal.jpg);
 }
 
 .youtube {
-  background-image: url(../img/youtube.jpg);
+  background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_youtube.jpg);
 }
 
 .twitter {
   background-position: left bottom;
-  background-image: url(../img/twitter.jpg);
+  background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_twitter.jpg);
 }
 
 .linkedin {
   background-position: center center;
-  background-image: url(../img/linkedin.jpg);
+  background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_linkedin.jpg);
 }
 
 .github {
   background-position: center center;
-  background-image: url(../img/github.webp);
+  background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_github.webp);
 }
 
 .card_profile {

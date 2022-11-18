@@ -159,36 +159,9 @@ body {
     background-size: cover;
 }
 
-.birthday {
-    background-image: url(../img/birthday.jpg);
-}
-  
-.mail {
-    background-image: url(../img/mail.jpg);
-}
-
 .personal {
   background-position: bottom center;
-  background-image: url(../img/personal.jpg);
-}
-
-.youtube {
-  background-image: url(../img/youtube.jpg);
-}
-
-.twitter {
-  background-position: left bottom;
-  background-image: url(../img/twitter.jpg);
-}
-
-.linkedin {
-  background-position: center center;
-  background-image: url(../img/linkedin.jpg);
-}
-
-.github {
-  background-position: center center;
-  background-image: url(../img/github.webp);
+  background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_personal.jpg);
 }
 
 .card_profile {
