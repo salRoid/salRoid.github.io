@@ -8,6 +8,7 @@ html {
 }
 
 body {
+	min-width: 24rem;
 	margin: 0.8rem;
 	font-size: 16px;
 	color: #999999;
@@ -790,30 +791,24 @@ a {
 }
 
 .red {
-	color: #da2665;
-	border-color: #da2665;
+	color: #E97777;
+	border-color: #E97777;
 }
 
 .blue {
-	color: #2361dd;
-	border-color: #2361dd;
+	color: #6176c2;
+	border-color: #6176c2;
 }
 
 .purple {
-	color: #691b77;
-	border-color: #691b77;
+	color: #9e6eb6;
+	border-color: #9e6eb6;
 }
 
 .cyan {
-	color: #0d645e;
-	border-color: #0d645e;
+	color: #66ad93;
+	border-color: #66ad93;
 }
-
-.blue {
-	color: #2361dd;
-	border-color: #2361dd;
-}
-
 
 .loading_90 {
 	animation: loading-4 .6s linear forwards .8s !important;
@@ -923,7 +918,7 @@ a {
 }
 
 .project_item_card {
-	min-width: 20rem;
+	min-width: 18rem;
 	flex-grow: 1;
 	margin: 16px;
 	display: flex;
@@ -1004,30 +999,30 @@ a {
 }
 
 .open_source_container {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .open_source_item {
-  padding: 8px;
-  display: flex;
-  flex-direction: row;
-  border-bottom: 1px solid #e0e0e0;
-  justify-content: space-between;
-  align-items: center;
+	padding: 8px;
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid #e0e0e0;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .open_source_item:last-child {
-  border-bottom: none;
+	border-bottom: none;
 }
 
 .os-item_container {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .os_item_name {
-  font-weight: 600;
+	font-weight: 600;
 	color: #5f5f5f;
 	font-size: 1rem;
 }
@@ -1039,20 +1034,36 @@ a {
 }
 
 .star_container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
 
 .star_icon {
-  margin: 4px;
-  width: 16px;
-  height: 16px;
-  background-size: contain;
-  background-image: url(../original/star.png);
+	margin: 4px;
+	width: 16px;
+	height: 16px;
+	background-size: contain;
+	background-image: url(../original/star.png);
 }
 
 .os {
-  background-image: url(../original/banner_os.jpg);
+	background-image: url(../original/banner_os.jpg);
+}
+
+.education {
+	margin-bottom: 24px;
+	background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_youtube.jpg);
+}
+
+.edu_experience {
+	height: 7.4rem;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+	overflow: hidden;
+	width: fit-content;
+	box-shadow: rgb(0 0 0 / 20%) 2px 2px 16px 1px;
 }
