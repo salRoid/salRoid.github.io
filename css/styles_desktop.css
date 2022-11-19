@@ -949,7 +949,7 @@ a {
 
 .project_item_card {
 	min-width: 18rem;
-	min-width: 20rem;
+	max-width: 20rem;
 	flex-grow: 1;
 	margin: 16px;
 	display: flex;
