@@ -12,7 +12,7 @@ body {
 	margin: 0.8rem;
 	font-size: 16px;
 	color: #999999;
-	background-image: url(../original/test1.jpg);
+	background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_body.jpg);
 }
 
 .title {
@@ -1062,16 +1062,16 @@ a {
 	width: 16px;
 	height: 16px;
 	background-size: contain;
-	background-image: url(../original/star.png);
+	background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/ico_star.png);
 }
 
 .os {
-	background-image: url(../original/banner_os.jpg);
+	background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_os.jpg);
 }
 
 .education {
 	margin-bottom: 24px;
-	background-image: url(../original/education.jpg);
+	background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_education.jpg);
 }
 
 .edu_experience {
