@@ -493,6 +493,7 @@ body {
 	flex-direction: column;
 	border-radius: 8px;
 	overflow: hidden;
+	margin-right: 8px;
 	box-shadow: rgb(0 0 0 / 20%) 2px 2px 16px 1px;
 }
 
