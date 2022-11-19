@@ -24,7 +24,7 @@ body {
 /* Panels */
 
 .card_panel {
-	padding: 16px;
+	padding: 12px;
 	border-radius: 16px;
 	background-clip: padding-box;
 	background-color: #fff;
@@ -214,7 +214,7 @@ body {
 }
 
 .banner_container {
-	width: 20rem;
+	width: 18rem;
 	height: 5rem;
 	background-position: center;
 	background-size: cover;
