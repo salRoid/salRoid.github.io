@@ -880,3 +880,98 @@ body {
   background-position: center top;
   background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_resume.jpg);
 }
+
+
+.projects_container {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.project_item_card {
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    width: fit-content;
+    box-shadow: rgb(0 0 0 / 20%) 2px 2px 16px 1px;
+}
+
+.project_banner_container {
+  width: 18rem;
+  height: 5rem;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+
+.project_content_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+  padding: 0 8px 8px;
+}
+
+.app_title {
+    font-weight: 600;
+    font-family: circularStdFont, sans-serif;
+    color: #685d5d;
+    font-size: 1.4rem;
+    margin-top: 4px;
+}
+
+.app_short_desc {
+  font-weight: 400;
+  font-family: circularStdFont, sans-serif;
+  font-size: .8rem;
+  color: #7381ff;
+  
+}
+
+.app_hype {
+  margin-top: 4px;
+    font-style: italic;
+    font-weight: 400;
+    font-family: circularStdFont, sans-serif;
+    color: #685d5d;
+    font-size: 1rem;
+}
+
+.project_icon {
+  width: 56px;
+  height: 56px;
+  padding: 2px;
+  position: relative;
+  border: 2px solid #f36835;
+  border-radius: 50%;
+}
+
+.banner_play_store {
+  background-size: cover;
+  background-position: bottom;
+  background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_play_store.png);
+}
+
+.banner_clasick {
+  background-size: cover;
+  background-position: center;
+  background-color: #064e5a;
+}
+
+.clasick_border {
+  border: 2px solid #FFFFFF;
+}
+
+.projects {
+  background-position: center center;
+  background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_projects.jpg);
+}
