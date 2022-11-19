@@ -904,14 +904,13 @@ body {
 .projects_container {
   display: flex;
   flex-direction: row;
-  padding: 16px;
   flex-wrap: wrap;
   align-items: center;
 }
 
 .project_item_card {
     flex-grow: 1;
-    margin: 8px;
+    margin: 16px;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
