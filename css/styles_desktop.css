@@ -194,7 +194,6 @@ body {
 }
 
 .banner_container {
-	width: 18rem;
 	height: 5rem;
 	background-position: center;
 	background-size: cover;
@@ -482,7 +481,7 @@ body {
 	flex-direction: column;
 	border-radius: 8px;
 	overflow: hidden;
-	width: fit-content;
+	margin-right: 8px;
 	box-shadow: rgb(0 0 0 / 20%) 2px 2px 16px 1px;
 }
 
@@ -1090,10 +1089,12 @@ a {
 	  flex-direction: column;
 	  border-radius: 8px;
 	  overflow: hidden;
-	  width: 18rem;
+	  width: 100%;
 	  box-shadow: rgb(0 0 0 / 20%) 2px 2px 16px 1px;
 	  align-items: center;
 	  justify-content: center;
+	  margin-left: 8px;
+	
   }
 
   .edu_title {
