@@ -690,22 +690,23 @@ a {
 	.card_header_title {
 		margin-left: 0;
 	}
-	.mobile_acitve {
-		display: flex;
+
+	.mobile_active {
+		display: block !important;
 	}
 
 	.mobile_inactive {
-		display:  none;
+		display:  none !important;
 	}
 
 }
 
-.mobile_acitve {
-	display:  none;
+.mobile_active {
+	display: none;
 }
 
-.mobile_inacitve {
-	display: block;
+.mobile_inactive {
+	display:  block;
 }
 
 .skill_container {

@@ -680,23 +680,24 @@ a {
 		margin-left: 0;
 	}
 
-	.mobile_acitve {
-		display: flex;
+	.mobile_active {
+		display: block !important;
 	}
 
 	.mobile_inactive {
-		display:  none;
+		display:  none !important;
 	}
 
 }
 
-.mobile_acitve {
-	display:  none;
+.mobile_active {
+	display: none;
 }
 
-.mobile_inacitve {
-	display: flex;
+.mobile_inactive {
+	display:  block;
 }
+
 
 .remove_border {
 	border-bottom-right-radius: 0px;
@@ -1072,14 +1073,78 @@ a {
 	margin-bottom: 24px;
 	background-image: url(../original/education.jpg);
   }
+  
+  .edu_experience {
+	  display: flex;
+	  height: 7.4rem;
+	  padding: 16px;
+	  display: flex;
+	  flex-direction: column;
+	  border-radius: 8px;
+	  overflow: hidden;
+	  width: 100%;
+	  box-shadow: rgb(0 0 0 / 20%) 2px 2px 16px 1px;
+	  align-items: center;
+	  justify-content: center;
+	  margin-left: 8px;
+	
+  }
 
-.edu_experience {
-	height: 7.4rem;
-	padding: 16px;
+  .edu_title {
+	font-weight: 600;
+	color: #5f5f5f;
+	font-size: 1rem;
+	width: 100%;
+	text-align: center;
+	border-bottom: 3px dotted #e0e0e0;
+	padding: 4px;
+  }
+
+  .edu_at {
+	font-weight: 400;
+	font-size: .8rem;
+	color: #7381ff;
+	padding: 4px;
+}
+
+  .edu_desc {
+	font-weight: 400;
+	font-size: .8rem;
+	color: #5f5f5f;
+	text-align: center;
+	font-style: oblique;
+	
+}
+
+.right_border {
 	display: flex;
-	flex-direction: column;
+    justify-content: flex-end;
+	border-right: 1px solid #DCDCDC;
+	padding-top: 10px;
+	margin-right: -12px;
+	padding-right: 12px;
+	padding-bottom: 13px;
+}
+
+.year_container_end {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.year_mark_end {
+	padding: 4px;
+	color: #00acee;
+	border: 1px solid #de6161;
+	background-color: #de6161;
 	border-radius: 8px;
-	overflow: hidden;
 	width: fit-content;
-	box-shadow: rgb(0 0 0 / 20%) 2px 2px 16px 1px;
+	margin-left: 10px;
+	margin-right: -17px;
+
+}
+
+.date_container_end {
+	margin-left: 0px;
+	margin-right: 24px;
 }
