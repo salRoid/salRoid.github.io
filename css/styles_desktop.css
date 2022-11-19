@@ -690,7 +690,22 @@ a {
 	.card_header_title {
 		margin-left: 0;
 	}
+	.mobile_acitve {
+		display: flex;
+	}
 
+	.mobile_inactive {
+		display:  none;
+	}
+
+}
+
+.mobile_acitve {
+	display:  none;
+}
+
+.mobile_inacitve {
+	display: block;
 }
 
 .skill_container {
@@ -1078,7 +1093,7 @@ a {
 
 .education {
 	margin-bottom: 24px;
-	background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/banner_youtube.jpg);
+	background-image: url(../original/education.jpg);
   }
   
   .edu_experience {
