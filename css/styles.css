@@ -24,22 +24,22 @@ body {
 
 .card_panel {
     padding: 16px;
-    border-radius: 8px;
+    border-radius: 16px;
     background-clip: padding-box;
     background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-    margin: 0.5rem 0 .6rem 0;
-    border: 1px solid #e0e0e0;
+    box-shadow: rgb(0 0 0 / 20%) 4px 4px 24px 4px;
+    margin: 0.6rem 0 .6rem 0;
+    border: .2px solid #e0e0e0;
 }
   
 .overview_panel {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 16px;
     background-clip: padding-box;
     background-color: #fff;
-    border: 1px solid #e0e0e0;
+    border: .2px solid #e0e0e0;
     overflow: hidden;
     margin-bottom: .4rem;
 }
@@ -59,11 +59,11 @@ body {
 }
 
 .gradient_left {
-    background: linear-gradient(to right, #15161a, #00000050);
+    background: linear-gradient(to right, #15161a, #00000030);
 }
 
 .gradient_bottom {
-    background: linear-gradient(to top, #15161a, #00000050);
+    background: linear-gradient(to top, #15161a, #00000030);
 }
   
   
@@ -90,12 +90,11 @@ body {
 
 .card_panel_outer {
   padding: 0;
-  border-radius: 8px;
+  border-radius: 16px;
   background-clip: padding-box;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-  margin: 0.5rem 0 .6rem 0;
-  border: 1px solid #e0e0e0;
+  box-shadow: rgb(0 0 0 / 20%) 4px 4px 24px 4px;
+  margin: 0.8rem 0 .8rem 0;
 }
 
 .inner_class {
@@ -107,10 +106,11 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 16px;
   background-clip: padding-box;
   background-color: #fff;
-  border: 1px solid #e0e0e0;
+  border: .2px solid #e0e0e0;
+  box-shadow: rgb(0 0 0 / 20%) 4px 4px 24px 4px;
   overflow: hidden;
   margin-bottom: .4rem;
 }
@@ -488,7 +488,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     width: fit-content;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    box-shadow: rgb(0 0 0 / 20%) 2px 2px 16px 1px;
   }
   
   .year_mark {
