@@ -909,6 +909,7 @@ body {
 }
 
 .project_item_card {
+    min-width: 20rem;
     flex-grow: 1;
     margin: 16px;
     display: flex;
