@@ -888,10 +888,10 @@ body {
   padding: 16px;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
 }
 
 .project_item_card {
+    flex-grow: 1;
     margin: 8px;
     display: flex;
     flex-direction: column;
@@ -902,7 +902,6 @@ body {
 }
 
 .project_banner_container {
-  width: 18rem;
   height: 5rem;
   background-size: cover;
   background-position: center center;
