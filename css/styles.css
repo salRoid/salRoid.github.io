@@ -688,6 +688,10 @@ a {
 		display: none !important;
 	}
 
+	.desktop_viewport {
+		display: none;
+	}
+
 }
 
 .mobile_active {

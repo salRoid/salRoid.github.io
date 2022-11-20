@@ -699,6 +699,14 @@ a {
 		display: none !important;
 	}
 
+	.mobile_viewport {
+		display: block !important;
+	}
+
+}
+
+.mobile_viewport {
+	display: none;
 }
 
 .mobile_active {
