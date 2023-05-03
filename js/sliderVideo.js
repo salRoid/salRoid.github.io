@@ -20,3 +20,13 @@ function pauseAudio() {
    $('.play_icon').hide();
    audio.play();
 }
+
+var myCarousel = document.getElementById('weddingCarousel')
+myCarousel.addEventListener('slide.bs.carousel', function () {
+   var vids = $(this).find(".active video");
+   if(vids.length > 0){
+      vids[0].pause();
+      vids[0].currentTime = 0;
+      vids[0].play();
+   }
+});
