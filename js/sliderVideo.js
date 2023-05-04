@@ -12,32 +12,22 @@ audio.addEventListener("canplaythrough", () => {
 
 var playButton = document.getElementById("play_icon");
 playButton.addEventListener('click', function () {
-   console.log('Play Icon');
-   pauseAudio();
+   const audio = document.getElementById("aud");
+   $('.mute_icon').css('display', 'flex');
+   $('.play_icon').css('display', 'none');
+   console.log('Played the audio');
+   audio.play();
 });
 
 
 var muteButton = document.getElementById("mute_icon");
 muteButton.addEventListener('click', function () {
-   console.log('Mute Icon');
-   playAudio();
-});
-
-function playAudio() {
    const audio = document.getElementById("aud");
    $('.play_icon').css('display', 'flex');
    $('.mute_icon').css('display', 'none');
-   console.log('Pause the audio');
+   console.log('Paused the audio');
    audio.pause();
-}
-
-function pauseAudio() {
-   const audio = document.getElementById("aud");
-   $('.mute_icon').css('display', 'flex');
-   $('.play_icon').css('display', 'none');
-   console.log('Play the audio');
-   audio.play();
-}
+});
 
 var myCarousel = document.getElementById('weddingCarousel')
 myCarousel.addEventListener('slide.bs.carousel', function () {
