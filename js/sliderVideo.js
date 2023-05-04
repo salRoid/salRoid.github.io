@@ -3,18 +3,23 @@ const audio = document.getElementById("aud");
 audio.addEventListener("canplaythrough", () => {
     audio.play().catch(e => {
        window.addEventListener('click', () => {
-          audio.play();
-          $('.play_icon').css('display', 'none');
-          $('.mute_icon').css('display', 'flex');
+         $('.play_icon').css('display', 'none');
+         $('.mute_icon').css('display', 'flex');
+         audio.play();
        })
     })
    });
 
-$('.play_icon').on('click', function () {
+var playButton = document.getElementById("play_icon");
+playButton.addEventListener('click', function () {
+   console.log('Play Icon');
    pauseAudio();
 });
 
-$('.mute_icon').on('click', function () {
+
+var muteButton = document.getElementById("mute_icon");
+muteButton.addEventListener('click', function () {
+   console.log('Mute Icon');
    playAudio();
 });
 
@@ -22,6 +27,7 @@ function playAudio() {
    const audio = document.getElementById("aud");
    $('.play_icon').css('display', 'flex');
    $('.mute_icon').css('display', 'none');
+   console.log('Pause the audio');
    audio.pause();
 }
 
@@ -29,6 +35,7 @@ function pauseAudio() {
    const audio = document.getElementById("aud");
    $('.mute_icon').css('display', 'flex');
    $('.play_icon').css('display', 'none');
+   console.log('Play the audio');
    audio.play();
 }
 
