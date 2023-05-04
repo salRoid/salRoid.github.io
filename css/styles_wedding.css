@@ -12,7 +12,7 @@
 }
 
 body {
-    width: 100%;
+    width: fit-content;
 }
 
 .img-fluid {
