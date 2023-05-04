@@ -1,5 +1,14 @@
 #aud {
     width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.5;
+    padding: 8px;
+}
+
+.carousel-indicators {
+    top: 0;
 }
 
 .icon {
@@ -35,7 +44,7 @@
     border-radius: 50%;
     width: 1.5rem;
     height: 1.5rem;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
