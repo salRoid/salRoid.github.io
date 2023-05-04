@@ -4,9 +4,9 @@ audio.addEventListener("canplaythrough", () => {
     audio.play().catch(e => {
        window.addEventListener('click', () => {
           audio.play();
+          $('.play_icon').hide();
        })
     })
-    $('.play_icon').hide();
    });
 
 function playAudio() {
