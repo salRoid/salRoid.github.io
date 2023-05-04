@@ -10,11 +10,11 @@ audio.addEventListener("canplaythrough", () => {
     })
    });
 
-$('.play_icon').addEventListener('click', function () {
+$('.play_icon').on('click', function () {
    pauseAudio();
 });
 
-$('.mute_icon').addEventListener('click', function () {
+$('.mute_icon').on('click', function () {
    playAudio();
 });
 
