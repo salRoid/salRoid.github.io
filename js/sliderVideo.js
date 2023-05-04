@@ -4,20 +4,24 @@ audio.addEventListener("canplaythrough", () => {
     audio.play().catch(e => {
        window.addEventListener('click', () => {
           audio.play();
-          $('.play_icon').hide();
+          $('.play_icon').css('display', 'none');
+          $('.mute_icon').css('display', 'flex');
        })
     })
    });
 
 function playAudio() {
-   $('.play_icon').show();
+   const audio = document.getElementById("aud");
+   $('.play_icon').css('display', 'flex');
+   $('.mute_icon').css('display', 'none');
    $('.mute_icon').hide();
    audio.pause();
 }
 
 function pauseAudio() {
-   $('.mute_icon').show();
-   $('.play_icon').hide();
+   const audio = document.getElementById("aud");
+   $('.mute_icon').css('display', 'flex');
+   $('.play_icon').css('display', 'none');
    audio.play();
 }
 
