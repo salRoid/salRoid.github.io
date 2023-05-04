@@ -30,7 +30,7 @@
     border-radius: 50%;
     width: 1.5rem;
     height: 1.5rem;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
