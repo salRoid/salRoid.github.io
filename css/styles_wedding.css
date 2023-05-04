@@ -11,15 +11,6 @@
     top: 0;
 }
 
-body {
-    width: fit-content;
-}
-
-.img-fluid {
-    height: 100vh;
-    object-fit: cover; 
-}
-
 .icon {
     width: 1rem;
     height: 1rem;
