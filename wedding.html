@@ -15,6 +15,14 @@
 
 <body>
   <div id="weddingCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="play_icon" id="play_icon">
+      <img class="icon" src="Wedding/disable_sound.png">
+    </div>
+    <div class="mute_icon" id="mute_icon">
+      <img class="icon_1" src="Wedding/enable_sound.png">
+    </div>
+
     <ol class="carousel-indicators">
       <li data-bs-target="#weddingCarousel" data-bs-slide-to="0" class="active"></li>
       <li data-bs-target="#weddingCarousel" data-bs-slide-to="1"></li>
@@ -49,7 +57,7 @@
     <a class="carousel-control-next" href="#weddingCarousel" role="button" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </a>
-    
+
     <audio id="aud" controls autoplay hidden>
       <source src="audio/peer.mp3" type="audio/mpeg">
     </audio>
