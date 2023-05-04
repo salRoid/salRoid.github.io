@@ -14,7 +14,7 @@ var playButton = document.getElementById("play_icon");
 playButton.addEventListener('click', () => {
    $('.mute_icon').css('display', 'flex');
    $('.play_icon').css('display', 'none');
-   console.log('Played the audio');
+   console.log('Play the audio');
    audio.play();
 });
 
@@ -23,7 +23,7 @@ var muteButton = document.getElementById("mute_icon");
 muteButton.addEventListener('click',  () => {
    $('.play_icon').css('display', 'flex');
    $('.mute_icon').css('display', 'none');
-   console.log('Paused the audio');
+   console.log('Pause the audio');
    audio.pause();
 });
 
