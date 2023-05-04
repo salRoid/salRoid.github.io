@@ -10,11 +10,18 @@ audio.addEventListener("canplaythrough", () => {
     })
    });
 
+$('.play_icon').addEventListener('click', function () {
+   pauseAudio();
+});
+
+$('.mute_icon').addEventListener('click', function () {
+   playAudio();
+});
+
 function playAudio() {
    const audio = document.getElementById("aud");
    $('.play_icon').css('display', 'flex');
    $('.mute_icon').css('display', 'none');
-   $('.mute_icon').hide();
    audio.pause();
 }
 
