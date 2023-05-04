@@ -12,18 +12,22 @@ audio.addEventListener("canplaythrough", () => {
 
 var playButton = document.getElementById("play_icon");
 playButton.addEventListener('click', () => {
+   console.log($('.mute_icon'));
+   console.log($('.play_icon'));
    $('.mute_icon').css('display', 'flex');
    $('.play_icon').css('display', 'none');
-   console.log('Play the audio');
+   console.log('Play the audio', audio);
    audio.play();
 });
 
 
 var muteButton = document.getElementById("mute_icon");
 muteButton.addEventListener('click',  () => {
+   console.log($('.mute_icon'));
+   console.log($('.play_icon'));
    $('.play_icon').css('display', 'flex');
    $('.mute_icon').css('display', 'none');
-   console.log('Pause the audio');
+   console.log('Pause the audio', audio);
    audio.pause();
 });
 
