@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: radial-gradient(#4d4d4d, #000000);
+    justify-content: center;
+    align-items: center;
+
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+.dog {
+    width: auto;
+    height: auto;
+}
+
+.dog-head {
+    background-color: #F8DC93;
+    position: relative;
+    width: 20vmin;
+    height: 14vmin;
+    left: -16vmin;
+    top: -10vmin;
+
+    border-radius: 2vmin 0 0 16vmin;
+}
+
+.dog-nose {
+    background-color: #000000;
+    position: relative;
+    width: 3vmin;
+    height: 3vmin;
+    left: -1vmin;
+    top: -1vmin;
+
+    border-radius: 2vmin 1vmin 1vmin 2vmin;
+}
+
+.dog-ear {
+    background-color: #F8DC93;
+    position: absolute;
+    height: 4vmin;
+    width: 3vmin;
+    top: -4vmin;
+    right: 0;
+
+    border-radius: 16vmin 4vmin 0 0;
+    box-shadow: -4vmin 0vmin 0 0px #C3AF79
+}
+
+.dog-eyes {
+    background-color: #D2AF5E;
+    position: relative;
+    height: 7vmin;
+    width: 7vmin;
+    border-radius: 50%;
+    top: -1vmin;
+    left: 10vmin;
+}
+
+.dog-eyes-black {
+    background-color: #000000;
+    position: relative;
+    height: 3vmin;
+    width: 3vmin;
+    border-radius: 50%;
+    top: 1vmin;
+    left: 2vmin;
+}
+
+.dog-eyes-white {
+    background-color: #fff;
+    position: relative;
+    height: 1vmin;
+    width: 1vmin;
+    border-radius: 50%;
+    top: .5vmin;
+    left: .5vmin;
+}
+
+.dog-smile {
+    background-color: #F8DC93;
+    position: absolute;
+    height: 3vmin;
+    width: 4vmin;
+
+    transform: rotate(180deg);
+    transform-origin: 100% 0;
+
+    outline: 0px solid #fff;
+
+    border-top: 3px solid #D2AF5E;
+    border-left: 2px solid #D2AF5E;
+
+    left: -.8vmin;
+
+    border-radius: 3vmin 0 0 0;
+}
+
+.tounge {
+    height: 3vmin;
+    width: 2.5vmin;
+    background-color: #F5901E;
+    border-radius: 1vmin 1vmin 0 0;
+    position: absolute;
+    left: 1.3vmin;
+    z-index: 1;
+
+    animation: JeebhLapLap .3s infinite;
+}
+
+@keyframes JeebhLapLap {
+    0% {
+        height: 3vmin;
+        top: -3.2vmin;
+    }
+    50% {
+        height: 2vmin;
+        top: -2.2vmin;
+    }
+    100% {
+        height: 3vmin;
+        top: -3.2vmin;
+    }
+}
+
+.dog-angry{
+    background-color: #000;
+    z-index: 1;
+    bottom: 4vmin;
+    left: 4vmin;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 2.7vmin;
+    width: 4vmin;
+}
+
+.teeth {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.fang {
+    transform: rotate(180deg);
+    border: .9vmin transparent solid;
+    border-bottom: 2vmin transparent solid;
+    border-color: transparent transparent #fff transparent;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    animation: run .1s ease-in-out infinite;
+}
+
+@keyframes run {
+    0% {border-bottom-width: 2.2vmin;}
+    25% {border-bottom-width: 2.1vmin;}
+    50% {border-bottom-width: 2vmin;}
+    75% {border-bottom-width: 2.1vmin;}
+    100% {border-bottom-width: 2.2vmin;}
+}
+
+
+.dog-body {
+    background-color: #F8DC93;
+    position: absolute;
+    width: 26vmin;
+    height: 14vmin;
+
+    border-radius: 2vmin 0 0 16vmin;
+
+    animation: lungs .4s ease-in-out infinite;
+}
+
+@keyframes lungs {
+    0% {border-bottom-left-radius: 22vmin;}
+    25% {border-bottom-left-radius: 20vmin;}
+    50% {border-bottom-left-radius: 16vmin;}
+    75% {border-bottom-left-radius: 20vmin;}
+    100% {border-bottom-left-radius: 22vmin;}
+}
+
+.dog-tail {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 5vmin 3vmin;
+    border-color: transparent transparent #F8DC93 transparent;
+    position: absolute;
+    right: 1px;
+    top: -4vmin;
+
+    transform: rotate(15deg);
+    transform-origin: 100% 100%;
+
+    animation: wag .4s ease-in-out infinite;
+}
+
+@keyframes wag {
+    0% {transform: rotate(15deg);}
+    25% {transform: rotate(20deg);}
+    50% {transform: rotate(10deg);}
+    75% {transform: rotate(20deg);}
+    100% {transform: rotate(15deg);}
+}
+
+.dog-spot {
+    background-color: #D2AF5E;
+    height: 12vmin;
+    width: 5vmin;
+    border-radius: 150px 0 0 150px;
+    transform : rotate(270deg);
+    position: absolute;
+    left: 4vmin;
+    top: 0;
+    transform-origin: 100% 0%;
+
+}
+
+.dog-leg-1{
+    background-color: #F8DC93;
+    height: 6vmin;
+    width: 3vmin;
+    left: 6vmin;
+    top: 12vmin;
+    position: absolute;
+    z-index: 1;
+}
+
+.foot-1 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 6vmin 4vmin;
+    border-color: transparent transparent #F8DC93 transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
+
+.dog-leg-2{
+    background-color: #F8DC93;
+    height: 6vmin;
+    width: 3vmin;
+    left: 10vmin;
+    top: 13vmin;
+    position: absolute;
+    z-index: 1;
+}
+
+.dog-leg-3{
+    background-color: #F8DC93;
+    height: 6vmin;
+    width: 3vmin;
+    left: 23vmin;
+    top: 14vmin;
+    position: absolute;
+    z-index: 1;
+}
+
+.dog-leg-4{
+    background-color: #C3AF79;
+    height: 6vmin;
+    width: 3vmin;
+    left: 19vmin;
+    top: 14vmin;
+    position: absolute;
+    z-index: 1;
+}
+
+.foot-2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 4vmin 4vmin;
+    border-color: transparent transparent #C3AF79 transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
