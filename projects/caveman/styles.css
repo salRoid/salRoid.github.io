@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    color: white;
+    font-family: "Poppins", "sans-serif";
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 180px;
+    position: absolute;
+    top: 1%;
+    color: #96D294;
+    opacity: 0.5;
+}
+
+h4 {
+    font-size: 24px;
+    position: absolute;
+    top: 55%;
+    color: #4C772B;
+    opacity: 0.9;
+}

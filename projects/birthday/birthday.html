@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<link rel="shortcut icon" href="images/patt.ico" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+
+	<!-- Font -->
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPoppins:400,500" rel="stylesheet">
+
+	<!-- Stylesheets -->
+
+	<link href="birthday/common-css/bootstrap.css" rel="stylesheet">
+
+	<link href="birthday/common-css/ionicons.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="birthday/common-css/jquery.classycountdown.css" />
+
+	<link href="birthday/css/styles.css" rel="stylesheet">
+
+	<link href="birthday/css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="main-area">
+		<div class="container full-height position-static">
+
+			<section class="left-section full-height">
+
+				<a class="logo"><img src="images/f.png" alt="Logo"></a>
+
+				<div class="display-table">
+					<div class="display-table-cell">
+						<div class="main-content">
+							<h1 class="title"><b>Amita's <br>Birthday</b> &#10084;&#65039; </h1>
+
+							<br>
+
+							<p class="main-desc">Life is nothing but fleeting memories and I'm grateful
+								to have shared the memorable ones with you.
+							</p>
+
+							<br>
+
+							<p class="main-desc">Your smile lights up my world, and your love completes me. 
+								Cheers to another year 🥂.
+							</p>
+
+							<br>
+
+							<div>
+								<h5 class="post-desc">Groove on her favorite track &#127925;</h5>
+								<br>
+
+								<div class="music-container">
+
+									<img class="music-concert" src="images/music.jpeg">
+									<audio controls autoplay>
+										<source src="audio/Chaiyan.mp3"  type="audio/mp3">
+										Your browser does not support the audio element.
+									</audio>
+									
+
+
+								</div>
+							</div>
+						</div><!-- main-content -->
+					</div><!-- display-table-cell -->
+				</div><!-- display-table -->
+				<div>
+
+
+					<div class="footer-container">
+						<p class="main-desc">Stay in touch : </p>
+
+						<a href="https://www.facebook.com/amitagupta22"><img class="logo-ico"
+								src="images/facebook.png"></a>
+
+						<a href="https://www.instagram.com/amitagupta__/"><img class="logo-ico"
+								src="images/instagram.webp"></a>
+					</div>
+
+			</section><!-- left-section -->
+
+
+			<section class="right-section" style="background-image: url(images/amita.png)">
+
+				<div class="display-table center-text">
+					<div class="display-table-cell">
+
+						<div id="rounded-countdown">
+							<div id="heroics" class="countdown" data-remaining-sec=""></div>
+						</div>
+
+					</div><!-- display-table-cell -->
+				</div><!-- display-table -->
+
+			</section><!-- right-section -->
+
+		</div><!-- container -->
+	</div><!-- main-area -->
+
+	<!-- SCIPTS -->
+
+	<script>
+
+		var startDate = new Date();
+		var endDate = new Date("3/22/2025");
+		var seconds = (endDate.getTime() - startDate.getTime()) / 1000;
+		document.getElementsByClassName('countdown')[0].setAttribute('data-remaining-sec', seconds);
+
+
+	</script>
+
+	<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+
+	<script src="birthday/common-js/jquery-3.1.1.min.js"></script>
+
+	<script src="birthday/common-js/tether.min.js"></script>
+
+	<script src="birthday/common-js/bootstrap.js"></script>
+
+	<script src="birthday/common-js/jquery.classycountdown.js"></script>
+
+	<script src="birthday/common-js/jquery.knob.js"></script>
+
+	<script src="birthday/common-js/jquery.throttle.js"></script>
+
+	<script src="birthday/common-js/scripts.js"></script>
+
+</body>
+
+</html>

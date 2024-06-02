@@ -1,0 +1,110 @@
+html {
+    min-height:100vh;
+    overflow: hidden;
+    background: radial-gradient(400% 100% at bottom, #070F2B, #1B1A55, #535C91, #9290C3);
+}
+
+#star-field {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .star {
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    
+    &.far {
+      width: 2px - 1;
+      height: 2px - 1;
+    }
+
+    &.near {
+      width: 2px + 2;
+      height: 2px + 2;
+    }
+
+    &.white {
+      background: #fff;
+      box-shadow: 0 0 15px #fff;
+    }
+
+    &.yellow {
+      background: #BFBB40;
+      box-shadow: 0 0 15px #BFBB40;
+    }
+
+    &.blue {
+      background: #444fff;
+      box-shadow: 0 0 15px #444fff;
+    }
+
+    &.red {
+      background: #ff4444;
+      box-shadow: 0 0 15px #ff4444;
+    }
+  }
+}
+
+.earth {
+  position: absolute;
+  bottom: -40%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sattelite-container {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 25%;
+  right: 0;
+  left: 10%;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sattellite {
+  width: 180px;
+  height: 180px;
+  margin-right: auto;
+  z-index: 3;
+}
+
+.astronaut {
+  width: 72px;
+  height: 72px;
+  margin-left: auto;
+  position: absolute;
+  animation: movement 10s infinite linear;
+  z-index: 3;
+}
+
+#line-canvas {
+  position: absolute;
+}
+
+@keyframes movement {
+  0% {
+    transform: rotate(0deg) translateY(10px) rotate(360deg);
+  } 
+  25% {
+    transform: rotate(0deg) translateY(10px) rotate(330deg);
+  } 
+  75% {
+    transform: rotate(0deg) translateX(10px) rotate(180deg);
+  } 
+  100% {
+    transform: rotate(360deg) translateY(10px) rotate(-360deg);
+  } 
+}

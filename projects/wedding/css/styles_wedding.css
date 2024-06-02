@@ -1,0 +1,50 @@
+#aud {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.5;
+    padding: 8px;
+}
+
+.carousel-indicators {
+    top: 0;
+}
+
+.icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.icon_1 {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.mute_icon {
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    margin: 8px;
+    background: #ffffff85;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.play_icon {
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    margin: 8px;
+    background: #ffffff85;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
