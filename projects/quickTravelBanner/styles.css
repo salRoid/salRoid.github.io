@@ -135,7 +135,7 @@ h1 {
 
 	@keyframes smooth-appear-bottom {
 		to {
-			bottom: 15rem;
+			bottom: 40%;
 			opacity: 1;
 		}
 	}
