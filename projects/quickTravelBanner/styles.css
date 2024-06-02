@@ -8,7 +8,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url(img/bali_1.jpg);
+	background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/bali_1.jpg);
 	background-size: cover;
 	margin: 0px;
 }
@@ -59,12 +59,12 @@ h1 {
 }
 
 .img-1 {
-	background-image: url(img/img_4.jpg);
+	background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/img_4.jpg);
 	background-position: bottom;
 }
 
 .img-2 {
-	background-image: url(img/bali_2.jpg);
+	background-image: url(https://d1s4mfv15j0tj6.cloudfront.net/bali_2.jpg);
 }
 
 .location {
@@ -135,7 +135,7 @@ h1 {
 
 	@keyframes smooth-appear-bottom {
 		to {
-			bottom: 30%;
+			bottom: 10%;
 			opacity: 1;
 		}
 	}
