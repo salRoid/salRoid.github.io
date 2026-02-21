@@ -1,0 +1,32 @@
+.about2-hero {
+  min-height: 85vh;
+}
+
+
+
+.about2-hero .about2-card {
+  background: rgba(255, 248, 238, 0.9);
+  border-color: rgba(255, 255, 255, 0.8);
+  color: #6b5846;
+  text-align: left;
+}
+
+.about2-hero .about2-card {
+  backdrop-filter: blur(6px);
+}
+
+.about2-hero .about2-id {
+  filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.25));
+}
+
+
+.logo-float {
+  position: absolute;
+  top: -64px;
+  right: 88px;
+  height: 68vh;
+  animation: logoFloat 6s ease-in-out infinite;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.35));
+  pointer-events: none;
+  z-index: 20;
+}

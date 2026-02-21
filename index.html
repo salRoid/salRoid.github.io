@@ -56,7 +56,7 @@
     </script>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body class="bg-white text-slate-900 dark:bg-ink dark:text-white font-body antialiased">
+  <body class="bg-white text-slate-900 dark:bg-ink dark:text-white font-body antialiased" data-page="home">
 
     <div class="min-h-screen relative overflow-hidden bg-hero">
       <div class="vector-layer">
@@ -92,401 +92,56 @@
         </svg>
       </div>
       <div class="relative z-10">
-      <header class="px-6 lg:px-12 pt-10">
-        <nav class="top-nav relative flex flex-wrap items-center gap-6">
-          <div class="flex items-center gap-3">
-            <img class="h-10 w-10 bg-white/70 dark:bg-white/10" src="img/logo.png" alt="salroid logo" />
-            <div>
-              <p class="gendy-display text-2xl">salroid.me</p>
-            </div>
-          </div>
-          <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div class="flex flex-wrap items-center justify-center gap-3">
-              <button type="button" class="tab-button rounded-full bg-accent px-4 py-2 text-sm font-semibold text-ink" data-tab="home">Home</button>
-              <button type="button" class="tab-button rounded-full border border-slate-300/60 dark:border-white/20 px-4 py-2 text-sm text-slate-500 dark:text-white/70 hover:border-accent hover:text-accent transition" data-tab="about">About</button>
-              <button type="button" class="tab-button rounded-full border border-slate-300/60 dark:border-white/20 px-4 py-2 text-sm text-slate-500 dark:text-white/70 hover:border-accent hover:text-accent transition" data-tab="projects">Projects</button>
-              <button type="button" class="tab-button rounded-full border border-slate-300/60 dark:border-white/20 px-4 py-2 text-sm text-slate-500 dark:text-white/70 hover:border-accent hover:text-accent transition" data-tab="blog">Blog</button>
-            </div>
-          </div>
-        </nav>
-      </header>
+      <div data-component="header"></div>
 
 <main class="px-6 lg:px-12 pb-20">
-  <section id="home" class="tab-panel">
-    <section class="mt-14 grid gap-4 lg:grid-cols-12 auto-rows-auto lg:w-[90%] lg:mr-auto">
-      <div class="lg:col-span-7 rounded-3xl bg-white/90 dark:bg-card/80 p-8 shadow-soft border border-slate-200/70 dark:border-white/10 flex flex-col justify-between gap-6">
-        <div class="flex items-center gap-4">
-          <div class="h-16 w-16 rounded-2xl bg-gradient-to-br from-accent/40 via-amber-200/60 to-glow/40"></div>
+  <section id="home">
+    <section class="home-hero mt-10 relative overflow-hidden rounded-[40px] border border-white/15 bg-slate-950 text-white shadow-soft">
+      <div class="absolute inset-0">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="Videos/evening-drive-and-windmills.3840x2160.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="relative grid gap-8 lg:grid-cols-[1fr_1fr] min-h-[520px] px-8 py-10">
+        <div class="flex flex-col justify-between">
           <div>
-            <p class="text-sm text-slate-500 dark:text-white/60">Hey, I'm Sajal 👋</p>
-            <p class="font-display text-2xl">Staff Software Engineer</p>
-            <p class="text-slate-600 dark:text-white/70">Frontend · Platform · Product</p>
+            <p class="text-xs uppercase tracking-[0.4em] text-white/70">Delivering</p>
+            <h1 class="font-display text-4xl sm:text-5xl leading-tight mt-3 text-white">Scalable<br />Solutions</h1>
+            <p class="text-sm text-white/75 mt-4 max-w-sm">Designing resilient architectures, intelligent systems, and product experiences built to perform reliably at scale.</p>
           </div>
         </div>
-        <div class="flex items-center justify-between">
-          <p class="text-sm text-slate-500 dark:text-white/60">Building thoughtful products with engineering craft.</p>
-          <a class="rounded-full border border-slate-300/60 dark:border-white/20 px-4 py-2 text-sm hover:border-accent hover:text-accent transition" href="resume/salroid.pdf" target="_blank">See resume</a>
+        <div class="flex flex-col items-end justify-between text-right">
+          <a class="text-xs uppercase tracking-[0.3em] text-white/70 hover:text-white transition" href="projects.html">Projects</a>
+          <div class="max-w-xs">
+            <p class="text-sm text-white/70">Engineered for</p>
+            <h2 class="font-display text-3xl sm:text-4xl text-white">Effortless<br />Experience</h2>
+          </div>
         </div>
       </div>
-      <a class="lg:col-span-3 rounded-3xl bg-white/90 dark:bg-card/80 p-6 shadow-soft border border-slate-200/70 dark:border-white/10 flex flex-col justify-between hover:border-accent transition" href="resume/salroid.pdf" target="_blank">
-        <div class="h-10 w-10 rounded-full border-2 border-accent"></div>
-        <div>
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-500 dark:text-white/60">Learn more</p>
-          <p class="font-display text-xl mt-2">See my resume</p>
-        </div>
-      </a>
-      <a class="lg:col-span-2 rounded-3xl bg-white/90 dark:bg-card/80 p-6 shadow-soft border border-slate-200/70 dark:border-white/10 flex flex-col justify-between hover:border-accent transition" href="https://play.google.com/store/apps/details?id=tech.salroid.filmy" target="_blank">
-        <div class="h-24 w-full rounded-2xl bg-slate-100 dark:bg-white/10"></div>
-        <div>
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-500 dark:text-white/60">Video library app</p>
-          <p class="font-display text-lg mt-2">Filmy</p>
-        </div>
-      </a>
-      <a class="lg:col-span-4 rounded-3xl bg-white/90 dark:bg-card/80 p-6 shadow-soft border border-slate-200/70 dark:border-white/10 flex flex-col justify-between hover:border-accent transition" href="projects/quickTravelBanner/index.html" target="_blank">
-        <div class="h-28 w-full rounded-2xl bg-slate-100 dark:bg-white/10"></div>
-        <div>
-          <p class="text-xs uppercase tracking-[0.2em] text-slate-500 dark:text-white/60">Social media app</p>
-          <p class="font-display text-lg mt-2">SocialCircus</p>
-        </div>
-      </a>
-      <div class="lg:col-span-3 rounded-3xl bg-white/90 dark:bg-card/80 p-6 shadow-soft border border-slate-200/70 dark:border-white/10 flex items-center justify-center">
-        <div class="h-20 w-20 rounded-2xl bg-slate-100 dark:bg-white/10"></div>
-      </div>
-      <a class="lg:col-span-5 rounded-3xl bg-white/90 dark:bg-card/80 p-6 shadow-soft border border-slate-200/70 dark:border-white/10 flex flex-col justify-between hover:border-accent transition" href="projects/interstellar/index.html" target="_blank">
-        <div class="flex items-start justify-between">
+      <div class="hero-bottom-row absolute bottom-8 left-8 right-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <a class="hero-about-card rounded-2xl backdrop-blur-sm p-2 flex items-center gap-4 text-white/90 hover:text-white transition" href="about.html">
+          <div class="h-12 w-12 rounded-full overflow-hidden border border-white/30">
+            <img class="h-full w-full object-cover" src="img/profile/profile_salroid.jpg" alt="Sajal Gupta" />
+          </div>
           <div>
-            <p class="text-xs uppercase tracking-[0.2em] text-slate-500 dark:text-white/60">Note taking app</p>
-            <p class="font-display text-lg mt-2">BrainDump</p>
+            <p class="text-sm font-semibold text-white">About salroid !</p>
+            <span class="text-xs text-white/70">The one with devil on the other side of the mirror</span>
           </div>
-          <div class="h-20 w-20 rounded-2xl bg-slate-100 dark:bg-white/10"></div>
-        </div>
-        <p class="text-sm text-slate-500 dark:text-white/60 mt-6">notes · supercharged · simplified</p>
-      </a>
-    </section>
-  </section>
-
-  <section id="about" class="tab-panel hidden">
-    <img class="logo-float" src="img/id_v.png" alt="salroid logo" />
-    <section class="mt-14 grid gap-4 lg:grid-cols-12 auto-rows-auto lg:w-[80%] lg:mr-auto">
-      <div class="lg:col-span-7 lg:row-span-2 rounded-3xl bg-white/90 dark:bg-card/80 p-8 shadow-soft border border-slate-200/70 dark:border-white/10 space-y-4">
-        <p class="tracking-[0.3em] text-xs text-slate-500 dark:text-white/60">About Me</p>
-        <h1 class="font-display text-4xl sm:text-5xl leading-tight"><span class="text-accent">Sajal Gupta</span></h1>
-        <p class="text-lg text-slate-600 dark:text-white/70">Staff Software Engineer · <span class="text-accent">30 yrs</span></p>
-        <p class="text-lg text-slate-600 dark:text-white/70">
-          The one with devil on the other side of the mirror, building <span class="text-accent">thoughtful products</span> with engineering craft and little bit of anger.
-        </p>
-        <div class="h-px w-full bg-slate-200/70 dark:bg-white/10"></div>
-        <div class="flex flex-wrap items-center gap-5">
-          <a class="link-logo" href="mailto:gupta.sajal631@gmail.com" target="_blank" rel="noreferrer">
-            <img src="https://d1s4mfv15j0tj6.cloudfront.net/ico_email.svg" alt="Email" />
-          </a>
-          <a class="link-logo" href="http://www.salroid.me" target="_blank" rel="noreferrer">
-            <img src="https://d1s4mfv15j0tj6.cloudfront.net/ico_web.svg" alt="Website" />
-          </a>
-          <a class="link-logo" href="https://youtube.com/c/salroid" target="_blank" rel="noreferrer">
-            <img src="https://d1s4mfv15j0tj6.cloudfront.net/ico_youtube.svg" alt="YouTube" />
-          </a>
-          <a class="link-logo" href="https://github.com/salroid" target="_blank" rel="noreferrer">
-            <img src="https://d1s4mfv15j0tj6.cloudfront.net/ico_github.svg" alt="GitHub" />
-          </a>
-          <a class="link-logo" href="https://www.linkedin.com/in/salroid" target="_blank" rel="noreferrer">
-            <img src="https://d1s4mfv15j0tj6.cloudfront.net/ico_linkedin.svg" alt="LinkedIn" />
-          </a>
-          <a class="link-logo" href="https://twitter.com/salroid" target="_blank" rel="noreferrer">
-            <img src="https://d1s4mfv15j0tj6.cloudfront.net/ico_twitter.svg" alt="X" />
-          </a>
-        </div>
-      </div>
-      <div class="lg:col-span-4 rounded-3xl bg-white/90 dark:bg-card/80 p-6 shadow-soft border border-slate-200/70 dark:border-white/10">
-        <p class="text-sm text-slate-500 dark:text-white/60">Impact</p>
-        <p class="text-3xl font-display text-accent mt-2">8+ yrs · 15+ ships</p>
-        <p class="text-xs text-slate-500 dark:text-white/60">Experience + products delivered</p>
-      </div>
-      <div class="lg:col-span-4 rounded-3xl bg-white/90 dark:bg-card/80 p-6 shadow-soft border border-slate-200/70 dark:border-white/10">
-        <p class="text-sm text-slate-500 dark:text-white/60">Philosophy</p>
-        <p class="text-lg font-display text-glow mt-2">Build with intent</p>
-        <p class="text-xs text-slate-500 dark:text-white/60">Clarity, craft, and a bit of edge.</p>
-      </div>
-      <div class="lg:col-span-4 rounded-3xl bg-white/90 dark:bg-card/80 p-6 shadow-soft border border-slate-200/70 dark:border-white/10">
-        <p class="text-sm text-slate-500 dark:text-white/60">Currently building</p>
-        <p class="text-lg font-display text-accent mt-2">Developer-first workflows</p>
-        <p class="text-xs text-slate-500 dark:text-white/60">Platform tooling & product surfaces.</p>
-      </div>
-      <a class="lg:col-span-4 rounded-3xl bg-white/90 dark:bg-card/80 p-6 shadow-soft border border-slate-200/70 dark:border-white/10 hover:border-accent transition" href="resume/salroid.pdf" target="_blank">
-        <p class="text-sm text-slate-500 dark:text-white/60">Resume</p>
-        <p class="text-2xl font-display text-accent mt-2">Download</p>
-        <p class="text-xs text-slate-500 dark:text-white/60">Latest PDF</p>
-      </a>
-    </section>
-
-    <section class="mt-20" id="media">
-      <div class="flex flex-col lg:flex-row items-start justify-between gap-6">
-        <div>
-          <h2 class="font-display text-3xl">Latest Media</h2>
-          <p class="text-slate-600 dark:text-white/70 mt-2 max-w-2xl">Fresh videos from YouTube and updates from X.</p>
-        </div>
-      </div>
-      <div class="mt-8 grid gap-6 lg:grid-cols-2">
-        <div class="rounded-3xl bg-white/90 dark:bg-card p-6 border border-slate-200/70 dark:border-white/10">
-          <div class="flex items-center justify-between">
-            <h3 class="font-display text-xl">YouTube</h3>
-            <a class="rounded-full border border-slate-300/60 dark:border-white/20 px-3 py-1 text-xs hover:border-accent hover:text-accent transition" href="https://www.youtube.com/@salroid" target="_blank">YouTube</a>
-          </div>
-          <p class="text-slate-600 dark:text-white/70 mt-2 text-sm">Latest uploads from the channel.</p>
-          <div class="mt-4 aspect-video overflow-hidden rounded-2xl border border-slate-200/70 dark:border-white/10">
-            <iframe
-              class="h-full w-full"
-              src="https://www.youtube.com/embed/JGQ5IR5XJ0c?si=FRnTbwjs3wibjlw1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-        <div class="rounded-3xl bg-white/90 dark:bg-card p-6 border border-slate-200/70 dark:border-white/10">
-          <div class="flex items-center justify-between">
-            <h3 class="font-display text-xl">X Updates</h3>
-            <a class="rounded-full border border-slate-300/60 dark:border-white/20 px-3 py-1 text-xs hover:border-accent hover:text-accent transition" href="https://x.com/salRoid" target="_blank">X</a>
-          </div>
-          <p class="text-slate-600 dark:text-white/70 mt-2 text-sm">Latest posts from @salRoid.</p>
-          <div class="mt-4">
-            <blockquote class="twitter-tweet" data-theme="dark">
-              <p lang="en" dir="ltr">Appraisal season is here.<br><br>If you got promoted, please don’t post your career update on X.<br><br>Keep that corporate validation on a platform called LinkedIn.<a href="https://twitter.com/hashtag/CareerUpdate?src=hash&amp;ref_src=twsrc%5Etfw">#CareerUpdate</a> <a href="https://twitter.com/hashtag/X?src=hash&amp;ref_src=twsrc%5Etfw">#X</a> <a href="https://twitter.com/hashtag/LinkedIn?src=hash&amp;ref_src=twsrc%5Etfw">#LinkedIn</a></p>
-              &mdash; Sajal Gupta (@salRoid) <a href="https://twitter.com/salRoid/status/2021282985513976195?ref_src=twsrc%5Etfw">February 10, 2026</a>
-            </blockquote>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mt-20">
-      <div class="rounded-3xl bg-white/90 dark:bg-card p-8 border border-slate-200/70 dark:border-white/10">
-        <div class="flex flex-col gap-8">
-          <div class="flex items-center justify-between">
-            <h2 class="font-display text-2xl">Work Experience & Education</h2>
-            <span class="text-xs text-slate-500 dark:text-white/40">Timeline</span>
-          </div>
-          <div class="grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
-            <div>
-              <p class="text-sm uppercase tracking-[0.2em] text-slate-500 dark:text-white/50">Work Experience</p>
-              <div class="mt-6 space-y-6">
-                <div class="flex gap-4">
-                  <div class="h-12 w-12 rounded-2xl bg-slate-100 dark:bg-white/10 grid place-items-center">SN</div>
-                  <div>
-                    <p class="text-sm text-slate-500 dark:text-white/50">Present</p>
-                    <p class="font-semibold text-lg">Sr. Software Engineer · ServiceNow</p>
-                    <p class="text-slate-600 dark:text-white/70">Building large-scale workflows and platform integrations.</p>
-                  </div>
-                </div>
-                <div class="flex gap-4">
-                  <div class="h-12 w-12 rounded-2xl bg-slate-100 dark:bg-white/10 grid place-items-center">CT</div>
-                  <div>
-                    <p class="text-sm text-slate-500 dark:text-white/50">2021</p>
-                    <p class="font-semibold text-lg">Senior Developer · Cognizant</p>
-                    <p class="text-slate-600 dark:text-white/70">Led web modernization projects for enterprise clients.</p>
-                  </div>
-                </div>
-                <div class="flex gap-4">
-                  <div class="h-12 w-12 rounded-2xl bg-slate-100 dark:bg-white/10 grid place-items-center">IN</div>
-                  <div>
-                    <p class="text-sm text-slate-500 dark:text-white/50">2017</p>
-                    <p class="font-semibold text-lg">Software Engineer · Early Career</p>
-                    <p class="text-slate-600 dark:text-white/70">Built mobile-first tools and APIs for internal products.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <p class="text-sm uppercase tracking-[0.2em] text-slate-500 dark:text-white/50">Education</p>
-              <div class="mt-6 space-y-6">
-                <div>
-                  <p class="text-sm text-slate-500 dark:text-white/50">2017</p>
-                  <p class="font-semibold text-lg">B.Tech, Computer Science</p>
-                  <p class="text-slate-600 dark:text-white/70">SRM University, Delhi</p>
-                </div>
-                <div>
-                  <p class="text-sm text-slate-500 dark:text-white/50">2013</p>
-                  <p class="font-semibold text-lg">AISSCE</p>
-                  <p class="text-slate-600 dark:text-white/70">Satyam International School, Patna</p>
-                </div>
-                <div>
-                  <p class="text-sm text-slate-500 dark:text-white/50">2011</p>
-                  <p class="font-semibold text-lg">AISSE</p>
-                  <p class="text-slate-600 dark:text-white/70">Vikas Residential School, Ranchi</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mt-20 rounded-3xl bg-white/90 dark:bg-card p-8 border border-slate-200/70 dark:border-white/10">
-      <h2 class="font-display text-3xl">Skills</h2>
-      <div class="mt-5 flex flex-wrap gap-3 text-sm text-slate-700 dark:text-white/80">
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">React</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Next.js</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Tailwind CSS</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">TypeScript</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">JavaScript</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">HTML</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">CSS</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Git</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">GitHub</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Node.js</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Express</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">MongoDB</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">PostgreSQL</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">MySQL</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Docker</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">AWS</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Python</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">FastAPI</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">RESTful APIs</span>
-      </div>
-    </section>
-  </section>
-
-  <section id="projects" class="tab-panel hidden">
-    <section class="mt-20">
-      <div class="flex items-center justify-between">
-        <h2 class="font-display text-3xl">Featured Projects</h2>
-        <a class="text-sm text-accent hover:text-white" href="https://github.com/salroid" target="_blank">View all</a>
-      </div>
-      <div class="mt-8 grid gap-6 lg:grid-cols-3">
-        <a class="rounded-3xl bg-white/90 dark:bg-card p-6 border border-slate-200/70 dark:border-white/10 hover:border-accent transition" href="https://play.google.com/store/apps/details?id=tech.salroid.filmy" target="_blank">
-          <p class="text-sm text-slate-500 dark:text-white/50">Filmy</p>
-          <h3 class="font-display text-xl mt-2">Your movie guide</h3>
-          <p class="text-slate-600 dark:text-white/70 mt-3">10k+ downloads · Android</p>
         </a>
-        <div class="rounded-3xl bg-white/90 dark:bg-card p-6 border border-slate-200/70 dark:border-white/10">
-          <p class="text-sm text-slate-500 dark:text-white/50">Clasick</p>
-          <h3 class="font-display text-xl mt-2">Classroom assistant</h3>
-          <p class="text-slate-600 dark:text-white/70 mt-3">Teacher productivity · Android</p>
-        </div>
-        <a class="rounded-3xl bg-white/90 dark:bg-card p-6 border border-slate-200/70 dark:border-white/10 hover:border-glow transition" href="projects/quickTravelBanner/index.html" target="_blank">
-          <p class="text-sm text-slate-500 dark:text-white/50">Travel Banner</p>
-          <h3 class="font-display text-xl mt-2">Quick interactive travel UI</h3>
-          <p class="text-slate-600 dark:text-white/70 mt-3">HTML · CSS · JS</p>
+        <a class="rounded-[28px] p-2 backdrop-blur-sm flex items-center gap-4 hover:text-white transition" href="https://play.google.com/store/apps/details?id=tech.salroid.filmy&hl=en_IN" target="_blank" rel="noreferrer">
+          <div class="h-14 w-14 rounded-[18px] flex items-center justify-center overflow-hidden">
+            <img class="h-10 w-10 rounded-[6px]" src="img/logo_filmy.png" alt="Filmy app icon" />
+          </div>
+          <div>
+            <p class="text-sm font-semibold text-white/90 whitespace-nowrap">Filmy - Discover Movies</p>
+            <span class="text-xs uppercase tracking-[0.35em] text-white/60">Open in Play Store</span>
+          </div>
         </a>
       </div>
     </section>
-
-    <section class="mt-20 grid gap-6 lg:grid-cols-3">
-      <div class="rounded-3xl bg-white/90 dark:bg-card p-6 border border-slate-200/70 dark:border-white/10">
-        <h2 class="font-display text-2xl">Open Source</h2>
-        <ul class="mt-4 space-y-3 text-sm text-slate-600 dark:text-white/70">
-          <li class="flex justify-between"><span>Filmy</span><span>730★</span></li>
-          <li class="flex justify-between"><span>Unbeatable Tic Tac Toe</span><span>10★</span></li>
-          <li class="flex justify-between"><span>Clasick</span><span>5★</span></li>
-        </ul>
-      </div>
-      <div class="rounded-3xl bg-white/90 dark:bg-card p-6 border border-slate-200/70 dark:border-white/10">
-        <h2 class="font-display text-2xl">Skill Highlights</h2>
-        <div class="mt-4 flex flex-wrap gap-2 text-sm">
-          <span class="rounded-full bg-slate-100 dark:bg-white/10 px-3 py-1">Java</span>
-          <span class="rounded-full bg-slate-100 dark:bg-white/10 px-3 py-1">JavaScript</span>
-          <span class="rounded-full bg-slate-100 dark:bg-white/10 px-3 py-1">Kotlin</span>
-          <span class="rounded-full bg-slate-100 dark:bg-white/10 px-3 py-1">HTML/CSS</span>
-          <span class="rounded-full bg-slate-100 dark:bg-white/10 px-3 py-1">PL/SQL</span>
-          <span class="rounded-full bg-slate-100 dark:bg-white/10 px-3 py-1">Shell</span>
-          <span class="rounded-full bg-slate-100 dark:bg-white/10 px-3 py-1">DSA</span>
-        </div>
-      </div>
-      <div class="rounded-3xl bg-white/90 dark:bg-card p-6 border border-slate-200/70 dark:border-white/10">
-        <h2 class="font-display text-2xl">Quick Demos</h2>
-        <div class="mt-4 space-y-2 text-sm">
-          <a class="block hover:text-accent" href="projects/interstellar/index.html" target="_blank">Interstellar</a>
-          <a class="block hover:text-accent" href="projects/birthday/birthday.html" target="_blank">Countdown</a>
-          <a class="block hover:text-accent" href="projects/doge/index.html" target="_blank">Doge</a>
-          <a class="block hover:text-accent" href="projects/monk/index.html" target="_blank">Monk</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="mt-20 rounded-3xl bg-white/90 dark:bg-card p-8 border border-slate-200/70 dark:border-white/10">
-      <h2 class="font-display text-3xl">Skills</h2>
-      <div class="mt-5 flex flex-wrap gap-3 text-sm text-slate-700 dark:text-white/80">
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">React</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Next.js</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Tailwind CSS</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">TypeScript</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">JavaScript</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">HTML</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">CSS</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Git</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">GitHub</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Node.js</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Express</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">MongoDB</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">PostgreSQL</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">MySQL</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Docker</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">AWS</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Python</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">FastAPI</span>
-        <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">RESTful APIs</span>
-      </div>
-    </section>
-  </section>
-
-  <section id="blog" class="tab-panel hidden">
-    <div class="mt-20 rounded-3xl bg-white/90 dark:bg-card p-8 border border-slate-200/70 dark:border-white/10">
-      <h2 class="font-display text-3xl">Blog</h2>
-      <p class="text-slate-600 dark:text-white/70 mt-2">Add your latest writing, tutorials, or travel stories here.</p>
-      <ul class="mt-6 space-y-3 text-sm text-slate-600 dark:text-white/70">
-        <li>Designing modular layouts for modern portfolios</li>
-        <li>Notes on building developer-first products</li>
-        <li>Travel diaries & creative experiments</li>
-      </ul>
-    </div>
-  </section>
 </main>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <script>
-      const updateToggleLabel = () => {};
-
-      const updateTwitterTheme = () => {
-        const isDark = document.documentElement.classList.contains("dark");
-        document.querySelectorAll(".twitter-timeline").forEach((timeline) => {
-          timeline.setAttribute("data-theme", isDark ? "dark" : "light");
-        });
-      };
-
-      updateTwitterTheme();
-      if (window.twttr && window.twttr.widgets) {
-        window.twttr.widgets.load();
-      }
-
-      const tabButtons = document.querySelectorAll(".tab-button");
-      const tabPanels = document.querySelectorAll(".tab-panel");
-
-      const setActiveTab = (tabId) => {
-        tabPanels.forEach((panel) => {
-          panel.classList.toggle("hidden", panel.id !== tabId);
-        });
-        tabButtons.forEach((button) => {
-          const isActive = button.dataset.tab === tabId;
-          button.classList.toggle("bg-accent", isActive);
-          button.classList.toggle("text-ink", isActive);
-          button.classList.toggle("border", !isActive);
-          button.classList.toggle("border-slate-300/60", !isActive);
-          button.classList.toggle("dark:border-white/20", !isActive);
-          button.classList.toggle("text-slate-500", !isActive);
-          button.classList.toggle("dark:text-white/70", !isActive);
-        });
-      };
-
-      tabButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          setActiveTab(button.dataset.tab);
-        });
-      });
-
-      setActiveTab("home");
-    </script>
+    <script src="js/includes.js"></script>
     </div>
   </body>
 </html>
