@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salroid | About</title>
+    <link rel="icon" href="img/android.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ["Syne", "sans-serif"],
+              body: ["Space Grotesk", "sans-serif"],
+            },
+            colors: {
+              ink: "#0b0b10",
+              surface: "#12131a",
+              card: "#161825",
+              accent: "#ff7a59",
+              accentSoft: "#ffeadf",
+              glow: "#35d0ba",
+            },
+            boxShadow: {
+              glow: "0 20px 50px rgba(53, 208, 186, 0.2)",
+              soft: "0 30px 80px rgba(10, 12, 20, 0.45)",
+            },
+            backgroundImage: {
+              hero: "radial-gradient(circle at top left, rgba(255, 122, 89, 0.35), transparent 55%), radial-gradient(circle at 20% 20%, rgba(53, 208, 186, 0.25), transparent 50%), linear-gradient(120deg, #0b0b10 0%, #12131a 55%, #0b0b10 100%)",
+            },
+          },
+        },
+      };
+    </script>
+    <script>
+      const applyTheme = (theme) => {
+        const root = document.documentElement;
+        if (theme === "dark") {
+          root.classList.add("dark");
+        } else {
+          root.classList.remove("dark");
+        }
+      };
+
+      const storedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      applyTheme(storedTheme || (prefersDark ? "dark" : "light"));
+    </script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/about.css" />
+  </head>
+  <body class="bg-white text-slate-900 dark:bg-ink dark:text-white font-body antialiased" data-page="about">
+    <div class="min-h-screen relative overflow-hidden bg-hero">
+      <div class="vector-layer">
+        <div class="vector-grid"></div>
+        <svg class="flow-line" style="top: 20%; left: -120px" viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10 120C120 40 220 200 340 120C450 60 560 180 690 90"
+            fill="none"
+            stroke="rgba(53, 208, 186, 0.5)"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            d="M10 170C160 120 260 220 360 150C470 70 570 210 690 120"
+            fill="none"
+            stroke="rgba(255, 122, 89, 0.45)"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-dasharray="8 10"
+          />
+        </svg>
+        <svg class="blob" style="top: -120px; right: -100px" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="#ff7a59"
+            d="M414.6,83.9C466.7,136,475.1,214.1,471.1,292.7C467.1,371.3,450.7,450.4,398.7,492.2C346.6,534,259,538.6,185.4,508.6C111.8,478.6,52.1,414,41.6,339.5C31.1,265,69.9,180.6,126.7,120.4C183.6,60.1,258.6,24,336.5,29.6C414.3,35.2,494.9,82.5,414.6,83.9Z"
+          />
+        </svg>
+        <svg class="blob secondary" style="bottom: -160px; left: -120px" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="#35d0ba"
+            d="M455.5,113.2C506.7,164.6,502.5,252.5,477.2,328.6C452,404.8,405.8,469.3,340.6,502C275.4,534.7,191.2,535.7,128.6,499.9C66,464.2,25,391.7,20.3,316.4C15.5,241.1,47,163.1,104.2,109.3C161.4,55.6,244.4,26.1,328.4,32.6C412.4,39.1,497.3,81.7,455.5,113.2Z"
+          />
+        </svg>
+      </div>
+      <div class="relative z-10">
+        <div data-component="header"></div>
+
+        <main class="px-6 lg:px-12 pb-20">
+          <section class="about2-hero mt-10 relative overflow-hidden rounded-[40px] border border-white/10 bg-[radial-gradient(circle_at_top,#ffe1bf,transparent_55%),linear-gradient(180deg,#f8d7b8,rgba(247,221,196,0.35)_60%,rgba(249,232,214,0.9))] px-8 py-10 text-slate-900 shadow-soft min-h-[75vh]">
+            <div class="absolute inset-0 opacity-50">
+              <div class="absolute -top-16 -left-10 h-48 w-48 rounded-full bg-white/40 blur-3xl"></div>
+              <div class="absolute -bottom-20 right-16 h-56 w-56 rounded-full bg-white/30 blur-3xl"></div>
+            </div>
+            <div class="relative grid gap-8 lg:grid-cols-[1.2fr_0.8fr] min-h-[520px] items-center">
+              <div class="flex flex-col justify-center">
+                <div>
+                  <p class="text-xs uppercase tracking-[0.4em] text-slate-600">About</p>
+                  <h1 class="font-display text-4xl sm:text-5xl leading-tight mt-3">Sajal Gupta</h1>
+                  <p class="text-sm text-slate-600 mt-4 max-w-sm">Staff Software Engineer crafting thoughtful products, scaling systems, and mentoring teams.</p>
+                  <div class="mt-6 flex flex-wrap items-center gap-4">
+                    <a class="link-logo" href="mailto:gupta.sajal631@gmail.com" target="_blank" rel="noreferrer">
+                      <img src="https://d1s4mfv15j0tj6.cloudfront.net/salroid.me/icons/icon-email.svg" alt="Email" />
+                    </a>
+                    <a class="link-logo" href="http://www.salroid.me" target="_blank" rel="noreferrer">
+                      <img src="https://d1s4mfv15j0tj6.cloudfront.net/salroid.me/icons/icon-web.svg" alt="Website" />
+                    </a>
+                    <a class="link-logo" href="https://youtube.com/c/salroid" target="_blank" rel="noreferrer">
+                      <img src="https://d1s4mfv15j0tj6.cloudfront.net/salroid.me/icons/icon-youtube.svg" alt="YouTube" />
+                    </a>
+                    <a class="link-logo" href="https://github.com/salroid" target="_blank" rel="noreferrer">
+                      <img src="https://d1s4mfv15j0tj6.cloudfront.net/salroid.me/icons/icon-github.svg" alt="GitHub" />
+                    </a>
+                    <a class="link-logo" href="https://www.linkedin.com/in/salroid" target="_blank" rel="noreferrer">
+                      <img src="https://d1s4mfv15j0tj6.cloudfront.net/salroid.me/icons/icon-linkedin.svg" alt="LinkedIn" />
+                    </a>
+                    <a class="link-logo" href="https://twitter.com/salroid" target="_blank" rel="noreferrer">
+                      <img src="https://d1s4mfv15j0tj6.cloudfront.net/salroid.me/icons/icon-x.svg" alt="X" />
+                    </a>
+                  </div>
+                </div>
+                <div class="about2-cards mt-8 grid gap-4 sm:grid-cols-2 max-w-lg">
+                  <div class="about2-card rounded-2xl p-4 border">
+                    <p class="text-xs uppercase tracking-[0.3em] text-slate-500">Impact</p>
+                    <p class="font-display text-xl mt-2">8+ yrs</p>
+                    <p class="text-xs text-slate-500">Building & shipping</p>
+                  </div>
+                  <div class="about2-card rounded-2xl p-4 border">
+                    <p class="text-xs uppercase tracking-[0.3em] text-slate-500">Products</p>
+                    <p class="font-display text-xl mt-2">15+</p>
+                    <p class="text-xs text-slate-500">Apps & experiments</p>
+                  </div>
+                  <div class="about2-card rounded-2xl p-4 border sm:col-span-2">
+                    <p class="text-xs uppercase tracking-[0.3em] text-slate-500">Philosophy</p>
+                    <p class="text-sm text-slate-700 mt-2">Clarity, craft, and a bit of edge. Ship only what deserves to exist.</p>
+                  </div>
+                  <div class="about2-card rounded-2xl p-4 border">
+                    <p class="text-xs uppercase tracking-[0.3em] text-slate-500">Currently building</p>
+                    <p class="font-display text-xl mt-2">Developer-first</p>
+                    <p class="text-xs text-slate-500">Workflows & tooling</p>
+                  </div>
+                  <a class="about2-card rounded-2xl p-4 border text-slate-700 hover:text-slate-900 transition" href="resume/salroid.pdf" target="_blank">
+                    <p class="text-xs uppercase tracking-[0.3em] text-slate-500">Resume</p>
+                    <p class="font-display text-xl mt-2">Download</p>
+                    <p class="text-xs text-slate-500">Latest PDF</p>
+                  </a>
+                </div>
+              <img class="about2-id -translate-x-1/2 -translate-y-1/2 logo-float" src="https://d1s4mfv15j0tj6.cloudfront.net/salroid.me/id_v.png" alt="salroid id card" />
+              </div>
+            </div>
+          </section>
+
+          <section class="mt-20" id="media">
+            <div class="flex flex-col lg:flex-row items-start justify-between gap-6">
+              <div>
+                <h2 class="font-display text-3xl">Latest Media</h2>
+                <p class="text-slate-600 dark:text-white/70 mt-2 max-w-2xl">Fresh videos from YouTube and updates from X.</p>
+              </div>
+            </div>
+            <div class="mt-8 grid gap-6 lg:grid-cols-2">
+              <div class="rounded-3xl bg-white/90 dark:bg-card p-6 border border-slate-200/70 dark:border-white/10">
+                <div class="flex items-center justify-between">
+                  <h3 class="font-display text-xl">YouTube</h3>
+                  <a class="rounded-full border border-slate-300/60 dark:border-white/20 px-3 py-1 text-xs hover:border-accent hover:text-accent transition" href="https://www.youtube.com/@salroid" target="_blank">YouTube</a>
+                </div>
+                <p class="text-slate-600 dark:text-white/70 mt-2 text-sm">Latest uploads from the channel.</p>
+                <div class="mt-4 aspect-video overflow-hidden rounded-2xl border border-slate-200/70 dark:border-white/10">
+                  <iframe
+                    class="h-full w-full"
+                    src="https://www.youtube.com/embed/JGQ5IR5XJ0c?si=FRnTbwjs3wibjlw1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <div class="rounded-3xl bg-white/90 dark:bg-card p-6 border border-slate-200/70 dark:border-white/10">
+                <div class="flex items-center justify-between">
+                  <h3 class="font-display text-xl">X Updates</h3>
+                  <a class="rounded-full border border-slate-300/60 dark:border-white/20 px-3 py-1 text-xs hover:border-accent hover:text-accent transition" href="https://x.com/salRoid" target="_blank">X</a>
+                </div>
+                <p class="text-slate-600 dark:text-white/70 mt-2 text-sm">Latest posts from @salRoid.</p>
+                <div class="mt-4">
+                  <blockquote class="twitter-tweet" data-theme="dark">
+                    <p lang="en" dir="ltr">Appraisal season is here.<br><br>If you got promoted, please don’t post your career update on X.<br><br>Keep that corporate validation on a platform called LinkedIn.<a href="https://twitter.com/hashtag/CareerUpdate?src=hash&amp;ref_src=twsrc%5Etfw">#CareerUpdate</a> <a href="https://twitter.com/hashtag/X?src=hash&amp;ref_src=twsrc%5Etfw">#X</a> <a href="https://twitter.com/hashtag/LinkedIn?src=hash&amp;ref_src=twsrc%5Etfw">#LinkedIn</a></p>
+                    &mdash; Sajal Gupta (@salRoid) <a href="https://twitter.com/salRoid/status/2021282985513976195?ref_src=twsrc%5Etfw">February 10, 2026</a>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mt-20">
+            <div class="rounded-3xl bg-white/90 dark:bg-card p-8 border border-slate-200/70 dark:border-white/10">
+              <div class="flex flex-col gap-8">
+                <div class="flex items-center justify-between">
+                  <h2 class="font-display text-2xl">Work Experience & Education</h2>
+                  <span class="text-xs text-slate-500 dark:text-white/40">Timeline</span>
+                </div>
+                <div class="grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+                  <div>
+                    <p class="text-sm uppercase tracking-[0.2em] text-slate-500 dark:text-white/50">Work Experience</p>
+                    <div class="mt-6 space-y-6">
+                      <div class="flex gap-4">
+                        <div class="h-12 w-12 rounded-2xl bg-slate-100 dark:bg-white/10 grid place-items-center">SN</div>
+                        <div>
+                          <p class="text-sm text-slate-500 dark:text-white/50">Present</p>
+                          <p class="font-semibold text-lg">Sr. Software Engineer · ServiceNow</p>
+                          <p class="text-slate-600 dark:text-white/70">Building large-scale workflows and platform integrations.</p>
+                        </div>
+                      </div>
+                      <div class="flex gap-4">
+                        <div class="h-12 w-12 rounded-2xl bg-slate-100 dark:bg-white/10 grid place-items-center">CT</div>
+                        <div>
+                          <p class="text-sm text-slate-500 dark:text-white/50">2021</p>
+                          <p class="font-semibold text-lg">Senior Developer · Cognizant</p>
+                          <p class="text-slate-600 dark:text-white/70">Led web modernization projects for enterprise clients.</p>
+                        </div>
+                      </div>
+                      <div class="flex gap-4">
+                        <div class="h-12 w-12 rounded-2xl bg-slate-100 dark:bg-white/10 grid place-items-center">IN</div>
+                        <div>
+                          <p class="text-sm text-slate-500 dark:text-white/50">2017</p>
+                          <p class="font-semibold text-lg">Software Engineer · Early Career</p>
+                          <p class="text-slate-600 dark:text-white/70">Built mobile-first tools and APIs for internal products.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="text-sm uppercase tracking-[0.2em] text-slate-500 dark:text-white/50">Education</p>
+                    <div class="mt-6 space-y-6">
+                      <div>
+                        <p class="text-sm text-slate-500 dark:text-white/50">2017</p>
+                        <p class="font-semibold text-lg">B.Tech, Computer Science</p>
+                        <p class="text-slate-600 dark:text-white/70">SRM University, Delhi</p>
+                      </div>
+                      <div>
+                        <p class="text-sm text-slate-500 dark:text-white/50">2013</p>
+                        <p class="font-semibold text-lg">AISSCE</p>
+                        <p class="text-slate-600 dark:text-white/70">Satyam International School, Patna</p>
+                      </div>
+                      <div>
+                        <p class="text-sm text-slate-500 dark:text-white/50">2011</p>
+                        <p class="font-semibold text-lg">AISSE</p>
+                        <p class="text-slate-600 dark:text-white/70">Vikas Residential School, Ranchi</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mt-20 rounded-3xl bg-white/90 dark:bg-card p-8 border border-slate-200/70 dark:border-white/10">
+            <h2 class="font-display text-3xl">Skills</h2>
+            <div class="mt-5 flex flex-wrap gap-3 text-sm text-slate-700 dark:text-white/80">
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">React</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Next.js</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Tailwind CSS</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">TypeScript</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">JavaScript</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">HTML</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">CSS</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Git</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">GitHub</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Node.js</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Express</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">MongoDB</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">PostgreSQL</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">MySQL</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Docker</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">AWS</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Python</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">FastAPI</span>
+              <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">RESTful APIs</span>
+            </div>
+          </section>
+        </main>
+
+        <div data-component="footer"></div>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script src="js/includes.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

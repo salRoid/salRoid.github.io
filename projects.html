@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salroid | Projects</title>
+    <link rel="icon" href="img/android.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ["Syne", "sans-serif"],
+              body: ["Space Grotesk", "sans-serif"],
+            },
+            colors: {
+              ink: "#0b0b10",
+              surface: "#12131a",
+              card: "#161825",
+              accent: "#ff7a59",
+              accentSoft: "#ffeadf",
+              glow: "#35d0ba",
+            },
+            boxShadow: {
+              glow: "0 20px 50px rgba(53, 208, 186, 0.2)",
+              soft: "0 30px 80px rgba(10, 12, 20, 0.45)",
+            },
+            backgroundImage: {
+              hero: "radial-gradient(circle at top left, rgba(255, 122, 89, 0.35), transparent 55%), radial-gradient(circle at 20% 20%, rgba(53, 208, 186, 0.25), transparent 50%), linear-gradient(120deg, #0b0b10 0%, #12131a 55%, #0b0b10 100%)",
+            },
+          },
+        },
+      };
+    </script>
+    <script>
+      const applyTheme = (theme) => {
+        const root = document.documentElement;
+        if (theme === "dark") {
+          root.classList.add("dark");
+        } else {
+          root.classList.remove("dark");
+        }
+      };
+
+      const storedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      applyTheme(storedTheme || (prefersDark ? "dark" : "light"));
+    </script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="bg-white text-slate-900 dark:bg-ink dark:text-white font-body antialiased" data-page="projects">
+    <div class="min-h-screen relative overflow-hidden bg-hero">
+      <div class="vector-layer">
+        <div class="vector-grid"></div>
+        <svg class="flow-line" style="top: 20%; left: -120px" viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10 120C120 40 220 200 340 120C450 60 560 180 690 90"
+            fill="none"
+            stroke="rgba(53, 208, 186, 0.5)"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            d="M10 170C160 120 260 220 360 150C470 70 570 210 690 120"
+            fill="none"
+            stroke="rgba(255, 122, 89, 0.45)"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-dasharray="8 10"
+          />
+        </svg>
+        <svg class="blob" style="top: -120px; right: -100px" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="#ff7a59"
+            d="M414.6,83.9C466.7,136,475.1,214.1,471.1,292.7C467.1,371.3,450.7,450.4,398.7,492.2C346.6,534,259,538.6,185.4,508.6C111.8,478.6,52.1,414,41.6,339.5C31.1,265,69.9,180.6,126.7,120.4C183.6,60.1,258.6,24,336.5,29.6C414.3,35.2,494.9,82.5,414.6,83.9Z"
+          />
+        </svg>
+        <svg class="blob secondary" style="bottom: -160px; left: -120px" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="#35d0ba"
+            d="M455.5,113.2C506.7,164.6,502.5,252.5,477.2,328.6C452,404.8,405.8,469.3,340.6,502C275.4,534.7,191.2,535.7,128.6,499.9C66,464.2,25,391.7,20.3,316.4C15.5,241.1,47,163.1,104.2,109.3C161.4,55.6,244.4,26.1,328.4,32.6C412.4,39.1,497.3,81.7,455.5,113.2Z"
+          />
+        </svg>
+      </div>
+      <div class="relative z-10">
+        <div data-component="header"></div>
+
+        <main class="px-6 lg:px-12 pb-20">
+          <section id="projects">
+            <section class="mt-20">
+              <div class="flex items-center justify-between">
+                <h2 class="font-display text-3xl">Featured Projects</h2>
+                <a class="text-sm text-accent hover:text-white" href="https://github.com/salroid" target="_blank">View all</a>
+              </div>
+              <div class="mt-8 grid gap-6 lg:grid-cols-3">
+                <a class="rounded-3xl bg-white/90 dark:bg-card p-6 border border-slate-200/70 dark:border-white/10 hover:border-accent transition" href="https://play.google.com/store/apps/details?id=tech.salroid.filmy" target="_blank">
+                  <p class="text-sm text-slate-500 dark:text-white/50">Filmy</p>
+                  <h3 class="font-display text-xl mt-2">Your movie guide</h3>
+                  <p class="text-slate-600 dark:text-white/70 mt-3">10k+ downloads · Android</p>
+                </a>
+                <div class="rounded-3xl bg-white/90 dark:bg-card p-6 border border-slate-200/70 dark:border-white/10">
+                  <p class="text-sm text-slate-500 dark:text-white/50">Clasick</p>
+                  <h3 class="font-display text-xl mt-2">Classroom assistant</h3>
+                  <p class="text-slate-600 dark:text-white/70 mt-3">Teacher productivity · Android</p>
+                </div>
+                <a class="rounded-3xl bg-white/90 dark:bg-card p-6 border border-slate-200/70 dark:border-white/10 hover:border-glow transition" href="projects/quickTravelBanner/index.html" target="_blank">
+                  <p class="text-sm text-slate-500 dark:text-white/50">Travel Banner</p>
+                  <h3 class="font-display text-xl mt-2">Quick interactive travel UI</h3>
+                  <p class="text-slate-600 dark:text-white/70 mt-3">HTML · CSS · JS</p>
+                </a>
+              </div>
+            </section>
+
+            <section class="mt-20 grid gap-6 lg:grid-cols-3">
+              <div class="rounded-3xl bg-white/90 dark:bg-card p-6 border border-slate-200/70 dark:border-white/10">
+                <h2 class="font-display text-2xl">Open Source</h2>
+                <ul class="mt-4 space-y-3 text-sm text-slate-600 dark:text-white/70">
+                  <li class="flex justify-between"><span>Filmy</span><span>730★</span></li>
+                  <li class="flex justify-between"><span>Unbeatable Tic Tac Toe</span><span>10★</span></li>
+                  <li class="flex justify-between"><span>Clasick</span><span>5★</span></li>
+                </ul>
+              </div>
+              <div class="rounded-3xl bg-white/90 dark:bg-card p-6 border border-slate-200/70 dark:border-white/10">
+                <h2 class="font-display text-2xl">Skill Highlights</h2>
+                <div class="mt-4 flex flex-wrap gap-2 text-sm">
+                  <span class="rounded-full bg-slate-100 dark:bg-white/10 px-3 py-1">Java</span>
+                  <span class="rounded-full bg-slate-100 dark:bg-white/10 px-3 py-1">JavaScript</span>
+                  <span class="rounded-full bg-slate-100 dark:bg-white/10 px-3 py-1">Kotlin</span>
+                  <span class="rounded-full bg-slate-100 dark:bg-white/10 px-3 py-1">HTML/CSS</span>
+                  <span class="rounded-full bg-slate-100 dark:bg-white/10 px-3 py-1">PL/SQL</span>
+                  <span class="rounded-full bg-slate-100 dark:bg-white/10 px-3 py-1">Shell</span>
+                  <span class="rounded-full bg-slate-100 dark:bg-white/10 px-3 py-1">DSA</span>
+                </div>
+              </div>
+              <div class="rounded-3xl bg-white/90 dark:bg-card p-6 border border-slate-200/70 dark:border-white/10">
+                <h2 class="font-display text-2xl">Quick Demos</h2>
+                <div class="mt-4 space-y-2 text-sm">
+                  <a class="block hover:text-accent" href="projects/interstellar/index.html" target="_blank">Interstellar</a>
+                  <a class="block hover:text-accent" href="projects/birthday/birthday.html" target="_blank">Countdown</a>
+                  <a class="block hover:text-accent" href="projects/doge/index.html" target="_blank">Doge</a>
+                  <a class="block hover:text-accent" href="projects/monk/index.html" target="_blank">Monk</a>
+                </div>
+              </div>
+            </section>
+
+            <section class="mt-20 rounded-3xl bg-white/90 dark:bg-card p-8 border border-slate-200/70 dark:border-white/10">
+              <h2 class="font-display text-3xl">Skills</h2>
+              <div class="mt-5 flex flex-wrap gap-3 text-sm text-slate-700 dark:text-white/80">
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">React</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Next.js</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Tailwind CSS</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">TypeScript</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">JavaScript</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">HTML</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">CSS</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Git</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">GitHub</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Node.js</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Express</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">MongoDB</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">PostgreSQL</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">MySQL</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Docker</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">AWS</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">Python</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">FastAPI</span>
+                <span class="rounded-full bg-slate-100/80 dark:bg-white/10 px-4 py-2">RESTful APIs</span>
+              </div>
+            </section>
+          </section>
+        </main>
+
+        <div data-component="footer"></div>
+        <script src="js/includes.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
